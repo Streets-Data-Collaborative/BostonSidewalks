@@ -26,7 +26,7 @@ To ensure that residents are able to comply with social distancing guidelines Ma
 4. [Build a relationship map](https://www.esri.com/arcgis-blog/products/arcgis-online/mapping/what-is-a-relationship-map/)
 5. Identify areas that are likely to be infection hotspots (high population activity, low sidewalk widths)
 
-**Future directions - Identifying 15-minute accessible regions**
+## Future directions - Identifying 15-minute accessible regions**
 
 Paris, under their mayor Anne Hidalgo is working to completely transform how people move around their city by introducing [the ’15-minute’ city](https://www.citylab.com/environment/2020/02/paris-election-anne-hidalgo-city-planning-walks-stores-parks/606325/), where all aspects of a person’s life are achievable within a 15-minute walk, bike, or transit ride from their residence.
 
