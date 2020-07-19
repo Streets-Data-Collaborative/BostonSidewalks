@@ -1,5 +1,13 @@
 # BostonSidewalks
-Profiling the sidewalks of Boston
+
+Profiling the sidewalks of Boston from a social distancing pov.
+
+* High Density & High  Sidewalk width
+* Low Density & High Sidewalk width
+* High Density & Low Sidewalk width
+* Low Density & Low Sidewalk width
+
+![RELATIONSHIP_MAP](https://user-images.githubusercontent.com/39370828/87182895-0a8a6d00-c2b3-11ea-92f7-e8b4d6943879.jpg)
 
 Sidewalks – Are they good enough?
 
