@@ -2,10 +2,58 @@
 
 Profiling the sidewalks of Boston from a social distancing pov.
 
-* High Density & High  Sidewalk width
+**Sidewalk Stress Index**
+
+To develop the sidewalk stress index, we considered two criteria:
+
+* Population Density:
+Obtained from the [LandScan datasource](https://hifld-geoplatform.opendata.arcgis.com/datasets/landscan-usa). Provides day and night incident population for a given area. It is a raster dataset with a pixel of approximately 90m by 90m size.
+
+* Sidewalk Width: 
+Obtained from the [Analyze Boston](https://data.boston.gov/dataset/sidewalk-inventory) which is the City of Boston's open data hub. It includes data on sidewalk segments in the City of Boston. The main variable we are interested in is the Sidewalk Width, which is in feet.
+
+By converting the raster population data into polygons, the mean sidewalk width incident on the cell was calculated with a spatial join. 
+
+```{r}
+
+library(sf)
+library(dplyr)
+
+# Normalizing data to export as a shp file
+
+ls_day_boston <- read_sf("landscan_r_analysis/boston_day_stress/boston_day_stress.shp")
+ls_ngt_boston <- read_sf("landscan_r_analysis/boston_night_stress/boston_night_stress.shp")
+
+# Calculating percentile rank to get normalized data:
+
+# daytime population:
+ls_day_boston$nrm_pop_dy <- percent_rank(ls_day_boston$gridcode)
+ls_day_boston$nrm_swk_dy <- percent_rank(ls_day_boston$SWK_WIDTH)
+ls_day_boston$stress_dy <- ls_day_boston$nrm_pop_dy-ls_day_boston$nrm_swk_dy
+
+#nighttime population
+ls_ngt_boston$nrm_pop_nt <- percent_rank(ls_ngt_boston$gridcode)
+ls_ngt_boston$nrm_swk_nt <- percent_rank(ls_ngt_boston$SWK_WIDTH)
+ls_ngt_boston$stress_nt <- ls_ngt_boston$nrm_pop_nt-ls_ngt_boston$nrm_swk_nt
+
+# saving shapefiles
+st_write(ls_day_boston, "landscan_r_analysis/boston_day_stress/boston_day_stress.shp", delete_layer = TRUE)
+st_write(ls_ngt_boston, "landscan_r_analysis/boston_night_stress/boston_night_stress.shp", delete_layer = TRUE)
+
+```
+
+Both values were normalized by percentile ranking between 0 & 1. By subtracting each cell's normalized population, with its corresponding normalized mean sidewalk width, we could compare (city-wide) how high or low the ratio was compared to the city-wide average. A negative score indicates lower than average stress, and a positive score indicates higher than average stress. Thus, we can consider **four** situational extremes:
+
+**Positive Score:** 0.01 to +1
 * Low Density & High Sidewalk width
 * High Density & Low Sidewalk width
+
+**Negative Score:** -1 to -0.01
 * Low Density & Low Sidewalk width
+* High Density & High  Sidewalk width
+
+**Neutral Score:**
+* The fifth situation, would be a score of 0, indicating said location has a stress score comparable to the city-wide average.
 
 ![RELATIONSHIP_MAP](https://user-images.githubusercontent.com/39370828/87182895-0a8a6d00-c2b3-11ea-92f7-e8b4d6943879.jpg)
 
