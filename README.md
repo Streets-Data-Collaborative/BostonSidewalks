@@ -1,6 +1,6 @@
 # BostonSidewalks
 
-Profiling the sidewalks of Boston from a social distancing pov.
+Profiling the sidewalks of Boston from a social distancing point of view.
 
 **Sidewalk Stress Index**
 
