@@ -12,13 +12,13 @@ By generating hexagonal tesselations of side equal to 1 mile (the generally acce
 
 1 mile radius hexagons | 1 mile radius overlapping circles
 :--:|:--:
-![](15_min_city/15_min_walk.png) | ![](15_min_city/15_min_walk_circles.png)
+![](15_min_walk.png) | ![](15_min_walk_circles.png)
 
 Working with the existing urban layout and physical infrastructure, how do we ensure that all the above mentioned services can be made available within this 1-mile zone?
 We mapped these two layers together: by getting the proportion of land covered under each major use type, how does each zone compare to the city-wide average?
 
 Land Use for Boston City | Land use proportions
 :--:|:--------------------:
-![](15_min_city/15_min_landuse.png)| ![](15_min_city/15_min_landuse_tableau.png) [_see data on Tableau Public_](https://public.tableau.com/profile/aseem.deodhar#!/vizhome/LandUseDiversityinBoston/Dashboard1)
+![](15_min_landuse.png)| ![](15_min_landuse_tableau.png) [_see data on Tableau Public_](https://public.tableau.com/profile/aseem.deodhar#!/vizhome/LandUseDiversityinBoston/Dashboard1)
 
 What policy, design and planning changes can be made to transform each zone into a self-sustaining 15-minute walk zone?
