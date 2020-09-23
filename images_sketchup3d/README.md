@@ -14,9 +14,9 @@ As we had determined from our analysis of Boston's sidewalks, we found four key 
 * **High Density & High Sidewalk width**
   + *Example areas:* Copley Square, Back Bay
   
- | Density | Sidewalk Width | Example Locality | Current View | Proposed View |
+ | Density | Sidewalk Width | Example Locality | Proposed View | Current View |
  |:-----:|:-----------:|:-----------|:---------:|:-----------------------------:|
- |High|High|Copley Square, Back Bay|![](copley_1_old.jpg)|![](copley_1_new.jpg)|
- |Low|Low|Roslindale, West Roxbury|![](fieldscorner_1_old.jpg)|![](fieldscorner_1_new.jpg)|
- |Low|High|Franklin Park, Boston Common|![](franklinpk_1_old.jpg)|![](franklinpk_1_new.jpg)|
- |High|Low|Financial District. Longwood Medical Center|![](oldstatehouse_4_old.jpg)|![](oldstatehouse_4_new.jpg)|
+ |High|High|Copley Square, Back Bay|![](copley_1_new.jpg)|![](copley_1_old.jpg)|
+ |Low|Low|Roslindale, West Roxbury|![](fieldscorner_1_new.jpg)|![](fieldscorner_1_old.jpg)|
+ |Low|High|Franklin Park, Boston Common|![](franklinpk_1_new.jpg)|![](franklinpk_1_old.jpg)|
+ |High|Low|Financial District. Longwood Medical Center|![](oldstatehouse_4_new.jpg)|![](oldstatehouse_4_old.jpg)|
