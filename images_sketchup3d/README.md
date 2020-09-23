@@ -15,7 +15,7 @@ As we had determined from our analysis of Boston's sidewalks, we found four key 
   + *Example areas:* Copley Square, Back Bay
   
  | Density | Sidewalk Width | Example Locality | Current View | Proposed View |
- |:-------:|:--------------:|:-----------------|:------------:|:-------------:|
+ |:-----:|:-----------:|:-----------|:---------:|:-----------------------------:|
  |High|High|Copley Square, Back Bay|![](copley_1_old.jpg)|![](copley_1_new.jpg)|
  |Low|Low|Roslindale, West Roxbury|![](fieldscorner_1_old.jpg)|![](fieldscorner_1_new.jpg)|
  |Low|High|Franklin Park, Boston Common|![](franklinpk_1_old.jpg)|![](franklinpk_1_new.jpg)|
