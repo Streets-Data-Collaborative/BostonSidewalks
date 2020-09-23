@@ -19,4 +19,4 @@ As we had determined from our analysis of Boston's sidewalks, we found four key 
  |High|High|Copley Square, Back Bay|![](copley_1_old.jpg)|![](copley_1_new.jpg)|
  |Low|Low|Roslindale, West Roxbury|![](fieldscorner_1_old.jpg)|![](fieldscorner_1_new.jpg)|
  |Low|High|Franklin Park, Boston Common|![](franklinpk_1_old.jpg)|![](franklinpk_1_new.jpg)|
- |High|Low|Financial District. Longwood Medical Center|![](oldstatehouse_1_old.jpg)|![](oldstatehouse_1_new.jpg|
+ |High|Low|Financial District. Longwood Medical Center|![](oldstatehouse_4_old.jpg)|![](oldstatehouse_4_new.jpg)|
